@@ -1,0 +1,269 @@
+.all{
+	margin-left: 100px;
+}
+.both{
+	margin-left: 310px;
+	margin-top: -31px;
+	font-family: Microsoft Yahei;
+}
+div.more a:link{
+	color: #F3F3F3;
+	text-decoration: none;
+}
+div.more a:hover{
+	width: 100px;
+	height: 80px;
+	padding:5px 10px 5px 10px;/*用onmouseover使之固定不动*/
+	background-color: #F3F3F3;
+	text-decoration: none;
+	border-style: 5px solid #F3F3F3;
+}
+.both input{
+	/*margin-left: 680px;
+	margin-top: 0px;*/
+	position: absolute;
+	left: 780px;
+	top: 15px;
+	height: 31px;
+	width: 185px;
+	background-color: #F3F3F3;
+	border-color: #F3F3F3;
+	border-width: 1px;
+	border-radius: 2px;
+	border: none;
+	font-family: Microsoft Yahei;
+}
+.both ul{
+	margin-left: 666px;
+	margin-top: -23px
+}
+.every{
+	position: absolute;
+	margin-left: 427px;
+	margin-top: -26px;
+	z-index: 1;
+}
+.DIV2 li{
+	visibility: hidden;
+}
+.DIV1:hover{
+	width: 38px;
+	height: 31px;
+	background-color: #F3F3F3;
+	text-decoration: none;
+	border-style: 5px solid #F3F3F3;
+}
+.DIV2:hover li{ /*点击时和未点击时背景颜色不同*/
+	visibility:visible;
+	background-color: #F3F3F3;
+	width: 55px;
+}
+.DIV3{
+	border-bottom:  1px solid gray;
+}
+.tupian1{
+	margin-left: 765px;
+	margin-top: -158px
+}
+.tupian2{
+	margin-left: 815px;
+	margin-top: -36px;
+}
+.tupian3{
+	margin-left: 870px;
+	margin-top: -43px;
+}
+.tiao{
+	font-family: Microsoft Yahei;
+	font-color: gray;
+	font-size: 14px;
+	background-color: #005F3C;
+	width: 1340px;
+	height: 35px;
+}
+.tiao img{
+	vertical-align: middle;
+}
+div.tiao a:link{
+	color: black;
+    text-decoration: none;
+}
+div.tiao a:hover{
+	text-decoration: underline;
+}
+.home{
+	font-color: black;
+	margin-left: 95px;
+	padding: 6px;
+}
+.feed{
+	margin-left: 170px;
+	margin-top: -27px;
+}
+.shu{
+	margin-left: 247px;
+	margin-top: -24px;
+}
+.html{
+	margin-left: 265px;
+	margin-top:-16px;
+}
+.git{
+    margin-left: 319px;
+    margin-top: -19px;
+}
+.iOS{
+	margin-left: 355px;
+	margin-top: -18px;
+}
+.java{
+	margin-left: 394px;
+	margin-top: -20px;
+}
+.mysql{
+	margin-left: 440px;
+	margin-top: -19px;
+}
+.php{
+    margin-left: 500px;
+    margin-top: -19px;
+}
+.javascript{
+	margin-left: 548px;
+	margin-top: -19px;
+}
+.c{
+	margin-left: 630px;
+	margin-top: -19px;
+}
+.linux{
+	margin-left: 660px;
+	margin-top: -19px;
+}
+.css3{
+	margin-left: 712px;
+	margin-top: -19px;
+}
+.cc{
+	margin-left: 762px;
+	margin-top: -19px;
+}
+.node{
+	margin-left: 813px;
+	margin-top: -19px;
+}
+.python{
+	margin-left: 878px;
+	margin-top: -19px;
+}
+.dian{
+	font-size: 30px;
+	margin-left: 1190px;
+	margin-top: -38px;
+}
+.one{
+	background-color: #FCF8E3;
+	 font-family: Microsoft Yahei;
+     width:1150px;
+     height:791px;
+     margin-left: 90px;
+     margin-top: 42px;
+}
+.two{
+	width: 900px;
+	line-height: 1.5;
+     margin-left: 110px;
+    /* margin-top: 50px;*/
+}
+.two p1{
+	margin-left: 385px;
+	padding-top: 30px;
+}
+p1{
+	color:#D0021B;
+	font-size: 24px;
+	/*.margin-left: 150px;*/
+}
+.one input{
+	border-radius: 4px;
+	border-color: #CCCCCC;
+	border-width: 1.5px;
+	color:  #CCCCCC;
+}
+li{
+	list-style: none;
+}
+span{
+	color: #009A61;
+}
+.oneone{
+	width: 400px;
+	margin-left: 70px;
+	font-size: 14px;
+}
+.twoone{
+	margin-left: 510px;
+    margin-top: -160px;
+    font-size: 14px;
+}
+.threeone{
+	margin-left: 80px;
+       width:900px;
+       border-bottom:  1px solid #DDDDDD;
+}
+.three input{
+	margin-left: 420px;
+	margin-top: 80px;
+	border-bottom: 1px solid #DDDDDD;
+}
+.three img{
+	vertical-align: middle;
+}
+input::-webkit-input-placeholder {  /* WebKit browsers */
+    font-size: 15px;
+    font-family: Microsoft Yahei;
+}
+.four{
+	margin-left:100px;
+	font-family: Microsoft Yahei;
+	color: black;
+	font-size: 5px;
+    margin-top: 50px;
+}
+.fourone{
+	float:left;
+	}
+.fourtwo{
+	margin-left: 180px;
+	
+}
+.fourthree{
+	margin-left: 360px;
+	margin-top: -210px;
+}
+.fourfour{
+	margin-left: 600px;
+	margin-top: -337px;
+}
+.fourfive{
+	width: 300px;
+    margin-left: 777px;
+    margin-top: -273px;
+}
+div.four a:link{/*未访问的链接：灰色、无下划线 */
+	color: gray;
+	text-decoration:none;
+}
+div.four a:visited{/*已访问*/
+	color: gray;
+	text-decoration:underline;
+}
+div.four a:hover{/*鼠标放上去*/
+	color: gray;
+	text-decoration: underline;
+}
+.foursix{
+	color: gray;
+	margin-left: 380px;
+	margin-top: 240px;
+}
