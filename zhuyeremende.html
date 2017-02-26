@@ -3,12 +3,26 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="./zhuye.CSS">
+<link rel="stylesheet" type="text/css" href="./CSS/zhuye.CSS">
 	<title>主页</title>
 	<script type="text/javascript">
-
+    $(document).ready(function(e) {
+    $('a.zhan').click(function(){
+  var left = parseInt($(this).offset().left)+10, top =  parseInt($(this).offset().top)-10, obj=$(this);
+  $(this).append('<div id="zhan"><b>+1<\/b></\div>');
+  $('#zhan').css({'position':'absolute','z-index':'1', 'color':'#C30','left':left+'px','top':top+'px'}).animate({top:top-10,left:left+10},'slow',function(){
+   $(this).fadeIn('fast').remove();
+   var Num = parseInt(obj.find('span').text());
+       Num++;
+    obj.find('span').text(Num);
+  });
+   
+   
+  return false;
+ });
+ });
 	function zhuce(){
-	window.open('youxiangzhuce.html','_blank','top=65,left=230,height=550,width=900,scrollbars=no,menubar=no,toolbar=no,status=no')
+	window.open('youxiangzhuce.html','_blank','top=65,left=230,height=550,width=900,scrollbars=no,menubar=no,toolbar=no,status=no');
 	}
 	</script>
 </head>
@@ -728,31 +742,31 @@
 	<div class="zanhepinglun">
 		<div class="xiaotiao">
 			<div><a href="" class="touhang">nginx启用对HTTP2的支持</a></div>
-			<div class="zan1">0赞</div>
+			<div id="praises" class="zan1"><a href="##" class="zhan">赞<span>0</span></a></div>
 			<div class="shu2">|</div>
 			<div class="pinglun">0评论</div>
 		</div>
 		<div class="xiaotiao">
 			<div><a href="" class="touhang">长文《WebAssembly 实践:如何写代码》</a></div>
-			<div class="zan1">0赞</div>
+			<div id="praises" class="zan1"><a href="##" class="zhan">赞<span>0</span></a></div>
 			<div class="shu2">|</div>
 			<div class="pinglun">0评论</div>
 		</div>
 		<div class="xiaotiao">
 			<div><a href="" class="touhang">作为一个新手程序员该如何成长？</a></div>
-			<div class="zan1">0赞</div>
+			<div id="praises" class="zan1"><a href="##" class="zhan">赞<span>0</span></a></div>
 			<div class="shu2">|</div>
 			<div class="pinglun">0评论</div>
 		</div>
 		<div class="xiaotiao">
 			<div><a href="" class="touhang">你有必要知道的25个javascript面试题</a></div>
-			<div class="zan1">2赞</div>
+			<div id="praises" class="zan1"><a href="##" class="zhan">赞<span>2</span></a></div>
 			<div class="shu2">|</div>
 			<div class="pinglun">0评论</div>
 		</div>
 		<div class="xiaotiao">
 			<div><a href="" class="touhang">Javascript的this指向问题深度解析</a></div>
-			<div class="zan1">4赞</div>
+			<div id="praises" class="zan1"><a href="##" class="zhan">赞<span>4</span></a></div>
 			<div class="shu2">|</div>
 			<div class="pinglun">0评论</div>
 		</div>
