@@ -1,0 +1,278 @@
+body{
+	list-style: none;
+}
+.all{
+	margin-left: 100px;
+}
+.both{
+	margin-left: 310px;
+	margin-top: -31px;
+	font-family: Microsoft Yahei;
+}
+div.more a:link{
+	color: #F3F3F3;
+	text-decoration: none;
+}
+div.more a:hover{
+	width: 100px;
+	height: 80px;
+	padding:5px 10px 5px 10px;/*用onmouseover使之固定不动*/
+	background-color: #F3F3F3;
+	text-decoration: none;
+	border-style: 5px solid #F3F3F3;
+	border:1px solid transparent;
+}
+.both input{
+	/*margin-left: 680px;
+	margin-top: 0px;*/
+	position: absolute;
+	left: 780px;
+	top: 15px;
+	height: 31px;
+	width: 205px;
+	background-color: #F3F3F3;
+	border-color: #F3F3F3;
+	border-width: 1px;
+	border-radius: 2px;
+	border: none;
+	font-family: Microsoft Yahei;
+}
+.both ul{
+	margin-left: 666px;
+	margin-top: -23px
+}
+.every{
+	position: absolute;
+	margin-left: 427px;
+	margin-top: -26px;
+	z-index: 1;
+}
+.DIV2 li{
+	visibility: hidden;
+	list-style: none;
+}
+.DIV1:hover{
+	width: 20px;
+	height: 20px;
+	background-color: #F3F3F3;
+	text-decoration: none;
+	border-style: 5px solid #F3F3F3;
+	border:1px solid transparent;
+}
+.DIV1{
+	width: 20px;
+	height: 20px;
+	margin-top: 6px
+}
+.tupian1 img{
+	width: 20px;
+	height: 20px;
+}
+.tupian1:hover{
+    width: 20px;
+	height: 20px;
+	background-color: #F3F3F3;
+	text-decoration: none;
+	border-style: 5px solid #F3F3F3;
+	border:1px solid transparent;
+}
+.tupian2 img{
+	width: 20px;
+	height: 20px;
+}
+.tupian2:hover{
+    width: 20px;
+	height: 20px;
+	background-color: #F3F3F3;
+	text-decoration: none;
+	border-style: 5px solid #F3F3F3;
+	border:1px solid transparent;
+}
+.tupian3{
+	width: 20px;
+	height: 20px;
+}
+.DIV2:hover li{ /*点击时和未点击时背景颜色不同*/
+	visibility:visible;
+	background-color: #F3F3F3;
+	width: 55px;
+}
+.DIV3{
+	border-bottom:  1px solid gray;
+}
+.tupian1{
+	margin-left: 765px;
+	margin-top: -146px
+}
+.tupian2{
+	margin-left: 821px;
+	margin-top: -24px;
+}
+.tupian3{
+	margin-left: 870px;
+	margin-top: -33px;
+}
+.tiao{
+	margin-top: 26px;
+	font-family: Microsoft Yahei;
+	font-color: gray;
+	font-size: 14px;
+	background-color: #005F3C;
+	width: 1340px;
+	height: 35px;
+}
+.tiao img{
+	vertical-align: middle;
+}
+div.tiao a:link{
+	color: black;
+    text-decoration: none;
+}
+div.tiao a:hover{
+	text-decoration: underline;
+}
+.home{
+	font-color: black;
+	margin-left: 95px;
+	padding: 6px;
+}
+.feed{
+	margin-left: 170px;
+	margin-top: -27px;
+}
+.shu{
+	margin-left: 247px;
+	margin-top: -24px;
+}
+.html{
+	margin-left: 265px;
+	margin-top:-16px;
+}
+.git{
+    margin-left: 319px;
+    margin-top: -19px;
+}
+.iOS{
+	margin-left: 355px;
+	margin-top: -18px;
+}
+.java{
+	margin-left: 394px;
+	margin-top: -20px;
+}
+.mysql{
+	margin-left: 440px;
+	margin-top: -19px;
+}
+.php{
+    margin-left: 500px;
+    margin-top: -19px;
+}
+.javascript{
+	margin-left: 548px;
+	margin-top: -19px;
+}
+.c{
+	margin-left: 630px;
+	margin-top: -19px;
+}
+.linux{
+	margin-left: 660px;
+	margin-top: -19px;
+}
+.css3{
+	margin-left: 712px;
+	margin-top: -19px;
+}
+.cc{
+	margin-left: 762px;
+	margin-top: -19px;
+}
+.node{
+	margin-left: 813px;
+	margin-top: -19px;
+}
+.python{
+	margin-left: 878px;
+	margin-top: -19px;
+}
+.dian{
+	font-size: 30px;
+	margin-left: 1190px;
+	margin-top: -38px;
+}
+.top{
+	width: 1367px;
+	height: 300px;
+	background-color: #F6F6F6;
+	margin-left: -10px;
+}
+.touxiang{
+	margin-left: 80px;
+	margin-top: 0px;
+}
+.yourname{
+    margin-left: 300px;
+    margin-top: -230px;
+    font-family: Microsoft Yahei;
+    color: #999999;
+}
+.yourname li{
+	list-style: none;
+	vertical-align: middle;
+}
+.yn{
+	font-size: 23px;
+	color: black;
+	font-family: times;
+}
+.dangan{
+	margin-left: 130px;
+	margin-top: -20px;
+}
+.dangan a:link{
+	text-decoration: none;
+}
+.dangan a:hover{
+	text-decoration:underline;
+	color: black!important;/*它的优先级最高*/
+}
+.shengwang{
+	margin-top: 10px;
+	margin-left: -10px;
+}
+.xianju1{
+	font-size: 12.5px;
+	margin-top: 1px;
+}
+.xianju{
+	font-size: 12.5px;
+	margin-top: 10px;
+}
+.sandian{
+	margin-left: 800px;
+	margin-top: -200px;
+}
+.gerenziliao{
+	width: 450px;
+	height: 179px;
+	margin-left: 804px;
+	margin-top: -4px;
+	background-color: #EEEEEE;
+	font-size: 13px;
+	font-family: Microsoft Yahei;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+.mine2 li{
+	list-style: none;
+}
+.guanzhule{
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.fensi{
+	margin-left: 110px;
+	margin-top: -30px;
+}
+}
