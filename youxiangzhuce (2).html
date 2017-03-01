@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="youxiangzhuce.CSS">
+	<title>邮箱注册</title>
+   
+</head>
+<body>
+<div class="one">
+	<div class="three"><p1>登录</p1><hr></div>
+<form action="sign.php" method="post"  class="two"><!-- !!!!!!!!onsubmit="return checkform();"!!!!!!!!!! -->
+    <p2 style="font-family:times;font-size:20px;">注册新账号</p2><br><br><br>
+    <p3><strong>名字</strong></p3><br><br>
+    <input type="text" id="mingzi" name="mingzi" placeholder="真实姓名或常用昵称" style="height:30px;width:250px;"><br><br>
+    <input type="radio" value="用手机号注册" onclick="shouji1()">用手机号注册
+    <input type="radio" value="用Email注册" onclick="youxiang1()">用Email注册
+    <br><br>
+
+    <div id="shouji">
+        <input type="text" id="shoujihao" name="shoujihao"  placeholder="仅支持大陆手机号" style="height:30px;width:250px;"><br><br><!-- 怎么更改placeholder的内容 -->
+        <input type="text" id="yanzhengma" name="yanzhengma" placeholder="短信验证码" style="height:30px;width:160px;" checked>
+        <input type="submit" value="获取验证码" style="height:34px;width:90px;border-radius:3px;background-color:#FFFFFF;border-width:1px;border-color:#9A9A9A;font-family:Microsoft Yahei;margin-left:-9px;" checked><br><br>
+        <p4><strong>密码</strong></p4><br><br>
+        <input type="password" name="psd" placeholder="不少于6位" style="height:30px;width:250px;" checked><br><br> 
+    </div>
+
+    <div id="youxiang">
+       <input type="text" id="email" name="email" placeholder="hello@segmentfault.com" style="height:30px;width:250px;" checked><br><br>
+       <p9><strong>密码</strong></p9><br><br>
+        <input type="password" id="psd" name="psd" placeholder="不少于6位" style="height:30px;width:250px;" checked><br><br>
+        <input type="text" name="checklogina" value="0" style="display:none;" />
+    </div>
+   <script type="text/javascript">
+    var shouji=document.getElementById('shouji')
+        var youxiang=document.getElementById('youxiang')
+        shouji.style.display="block";
+        youxiang.style.display="none";
+    function shouji1(){
+        var shouji=document.getElementById('shouji')
+        var youxiang=document.getElementById('youxiang')
+        shouji.style.display="block";
+        youxiang.style.display="none";
+    }
+    function youxiang1(){
+       var shouji=document.getElementById('shouji')
+        var youxiang=document.getElementById('youxiang')
+        shouji.style.display="none";
+        youxiang.style.display="block";
+    }
+    </script>
+    <p5><strong>同意并接受</strong></p5>
+    <a href=""><span><strong>《服务条款》</strong></span></a>
+    <button style="height:35px;width:60px;border-right-radius:3px;background-color: #009A61;color:white;border-width:1px;border-color:#9A9A9A;" onclick="loadXMLDoc()">注册</button>
+        </form>
+    </div>
+    <div class="theright"><!-- CSS浮动 -->
+    <form action="sign.php" method="post" ;" class="five"><!-- !!!!!!!!!!!!!!!!onsubmit="return Checked()!!!!!!! -->
+    <p6 class="p6">用户登录</p6><br><br><br>
+    <p7 style="color:gray;"><strong>手机号 或 Email</strong></p7><br><br>
+    <input type="text" id="huozhe" name="huozhe" placeholder="11位手机号或Email" style="height:30px;width:250px;"><br><br>
+    <p8><strong>密码</strong></p8>
+    <a href=""><span><strong>忘记密码</strong></span></a><br><br>
+    <input type="password" id="psd1" name="psd" placeholder="密码" style="height:30px;width:250px;"><br><br>
+
+    <input type="hidden" name="checklogina" value="1" />
+    <input type="checkbox" name=""><p9>记住登录状态</p9>
+    <button style="height:35px;width:55px;border-radius:3px;background-color: #009A61;color:white;border-width:1px;border-color:#9A9A9A;margin-left:73px;">登录</button>
+    </div>
+ <script type="text/javascript">
+    function loadXMLDoc(){
+        var xmlhttp;
+        if(window.XMLHttpRequest){
+            xmlhttp=new XMLHttpRequest();
+        }
+        else{
+            xmlhttp=new ActiveXObject("Microsoft XMLHTTP");
+        }
+        xmlhttp.onreadystatechange=function(){
+            if(xmlhttp.readyState==4&&xmlhttp.status==200){
+                onsuccess(xmlhttp.responseText);
+            }
+            else{
+                onfail(xmlhttp.status);
+            }
+        }
+         xmlhttp.open("POST","C:/wamp64/www/sign.php",false);//这里还差个url文件在服务器上的位置
+         xmlhttp.send();
+    }
+
+   var a = document.getElementsByTagName("input")[7].value;
+   var b = document.getElementsByTagName("input")[8].value;
+        function Checked(){
+            var psd=document.getElementById("psd1");
+            var email=document.getElementById("huozhe");
+            if(email.value==""){
+                alert("请填写邮箱！");
+                return false;
+            }
+            if(!/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(email.value))//使用正则表达式来判断密码
+               {
+            alert("邮箱不符合规范！");
+            return false;
+               }
+            if (psd.value=="") {
+                alert("请输入密码！");
+                return false;
+            }
+            if(!psd.value.replace(/[^\a-\z\A-\Z]/g,''))//使用正则表达式来判断密码
+               {
+            alert("密码不符合规范！");
+            return false;
+               }
+            if (!a&&!b) {
+                alert("你输入的邮箱和密码都不对！");
+                return false;
+            }
+            if(!a){
+                alert("你输入的邮箱不对！");
+                return false;
+            }
+            if(!b){
+                alert("你输入的密码不对！");
+                return false;
+            }
+            else{
+                alert("恭喜登陆成功!");
+                return true;
+            }
+        }
+        function checkform(){
+            var mingzi=document.getElementById("mingzi");
+            var shoujihao=document.getElementById("shoujihao");
+            var yanzhengma=document.getElementById("yanzhengma");
+            var psd=document.getElementById("psd");
+            var email=document.getElementById("email");
+            if(mingzi.value==""){
+                alert("请填写昵称！");
+                return false;
+            }
+            if(mingzi.value.length <4 || mingzi.value.length> 8)//当用户输入的昵称小于4或者大于8时
+            {
+            alert("昵称不符合规范！");
+            return false;
+            }
+            if(email.value==""){
+                alert("请填写邮箱！");
+                return false;
+            }
+            if(!/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(email.value))//使用正则表达式来判断密码
+               {
+            alert("邮箱不符合规范！");
+            return false;
+               }
+            if (psd.value=="") {
+                alert("请输入密码！");
+                return false;
+            }
+            if(!psd.value.replace(/[^\a-\z\A-\Z]/g,''))//使用正则表达式来判断密码
+               {
+            alert("密码不符合规范！");
+            return false;
+               }
+            
+            
+            if(email.value.length<12){
+            //邮箱不能少于12个字符，否则不符合规范
+                alert("邮箱不符合规范");
+                return false;
+            }
+        }
+    </script>
+
+</body>
+</html>
